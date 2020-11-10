@@ -8,11 +8,11 @@ permalink: /
 {%-for file in site.static_files-%}
     {%-if file.path contains 'glb'-%}
         {%-assign models = models | push: file.path-%}
-        {{file.path}}
     {%-endif-%}
 {%-endfor-%}
-<model-viewer src="/assets/models/test.glb"
-              ios-src="/assets/models/test.usdz"
+{%-for model in models-%}
+<model-viewer src="{{-model-}}"
+              ios-src="{{-model | replace: "glb", "usdz"-}}"
               poster="/assets/logo.png"
               exposure="1"
               environment-image="/assets/env/garage.hdr"
@@ -29,3 +29,4 @@ permalink: /
         <img src="/assets/images/hand.png">
     </div>
 </model-viewer>
+{%-endfor-%}
