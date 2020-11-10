@@ -20,6 +20,7 @@ permalink: /
               ar
               ar-modes="webxr scene-viewer quick-look"
               ar-scale="fixed"
+              reveal="interaction"
               camera-controls
               quick-look-browsers="safari chrome">
     <button slot="ar-button" id="ar-button">
