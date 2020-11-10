@@ -1,0 +1,8 @@
+﻿plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+ 
+url: https://ar.notstupid.name
+
+title: "Notstupid AR Playground"
+lang: "en_EN"
