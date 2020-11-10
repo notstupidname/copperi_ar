@@ -4,6 +4,7 @@ description: notstupid AR Playground
 layout: default
 permalink: /
 ---
+{{site.models.label}}
 {%-for model in site.models.files-%}
 {{model}}
 <model-viewer src="{{-model-}}"
