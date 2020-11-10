@@ -4,9 +4,14 @@ description: notstupid AR Playground
 layout: default
 permalink: /
 ---
-{{site.models.label}}
-{%-for model in site.models.files-%}
-{{model}}
+{%-assign models = "" | split:","-%}
+{%-for file in site.static_files-%}
+    {%-if file.path contains "glb"-%}
+        {%-assign models = models | push: file.path-%}
+    {%-endif-%}
+{%-endfor-%}
+{%-for model in models-%}
+<h2>{{model}}</h2>
 <model-viewer src="{{-model-}}"
               ios-src="{{-model | replace: "glb", "usdz"-}}"
               poster="/assets/logo.png"
