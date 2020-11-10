@@ -5,6 +5,7 @@ layout: default
 permalink: /
 ---
 {%-for model in site.models.files-%}
+{{model}}
 <model-viewer src="{{-model-}}"
               ios-src="{{-model | replace: "glb", "usdz"-}}"
               poster="/assets/logo.png"
