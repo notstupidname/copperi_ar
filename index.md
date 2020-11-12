@@ -11,7 +11,7 @@ permalink: /
     {%-endif-%}
 {%-endfor-%}
 {%-for model in models-%}
-<h2>{{model}}</h2>
+<h2>{{model | split: "/" | last}}</h2>
 <model-viewer src="{{-model-}}"
               ios-src="{{-model | replace: "glb", "usdz"-}}"
               poster="/assets/logo.png"

@@ -2826,9 +2826,9 @@
       "alphaMode": "BLEND",
       "doubleSided": true,
       "emissiveFactor": [
-        0,
-        0,
-        0
+        0.459,
+        0.918,
+        1
       ],
       "name": "Material_72",
       "pbrMetallicRoughness": {
@@ -2836,7 +2836,7 @@
           0.4049999713897705,
           0.45124998688697815,
           0.5,
-          0.2
+          0.1
         ],
         "metallicFactor": 1,
         "roughnessFactor": 0.1
