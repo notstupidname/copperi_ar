@@ -19,7 +19,7 @@ permalink: /
               environment-image="/assets/env/garage.hdr"
               shadow-intensity="1"
               ar
-              ar-modes="webxr scene-viewer quick-look"
+              ar-modes="webxr quick-look"
               ar-scale="fixed"
               reveal="interaction"
               camera-controls
