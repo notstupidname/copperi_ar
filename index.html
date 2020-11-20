@@ -11,7 +11,7 @@ permalink: /
     {%-endif-%}
 {%-endfor-%}
 {%-for model in models-%}
-<h2>{{model | split: "/" | last}}</h2>
+<!-- <h2>{{model | split: "/" | last}}</h2>
 <model-viewer src="{{-model-}}"
               ios-src="{{-model | replace: "glb", "usdz"-}}"
               poster="/assets/logo.png"
@@ -30,6 +30,6 @@ permalink: /
     <div id="ar-prompt">
         <img src="/assets/images/hand.png">
     </div>
-</model-viewer>
-<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://ar.notstupid.name{{-model-}}&mode=ar_only&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">{{model}}</a>
+</model-viewer> -->
+<a class="button" href="intent://arvr.google.com/scene-viewer/1.0?file=https://ar.notstupid.name{{-model-}}&mode=ar_only&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">{{model}}</a>
 {%-endfor-%}

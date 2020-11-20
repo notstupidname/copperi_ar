@@ -69,3 +69,11 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 model-viewer > #ar-prompt > img {
     animation: circle 4s linear infinite;
 }
+
+.button {
+    background: #4285f4;
+    line-height: 2em;
+    height: 2em;
+    padding: 0.5em;
+    text-align: center;
+}
