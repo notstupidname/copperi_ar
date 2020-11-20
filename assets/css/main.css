@@ -70,10 +70,19 @@ model-viewer > #ar-prompt > img {
     animation: circle 4s linear infinite;
 }
 
+body {
+    text-align: center;
+    padding-top: 3em;
+}
+
 .button {
     background: #4285f4;
     line-height: 2em;
     height: 2em;
     padding: 0.5em;
     text-align: center;
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 2em;
+    color: #fff;
 }
