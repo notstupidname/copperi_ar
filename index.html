@@ -12,5 +12,4 @@ permalink: /
 {%-endfor-%}
 {%-for model in models-%}
 <a class="button arbutton" data-arsrc="{{model | split: "/" | last}}" href=#>{{model | split: "/" | last}}</a>
-<!-- "intent://arvr.google.com/scene-viewer/1.0?file=https://ar.notstupid.name{{-model-}}&mode=ar_only&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">{{model | split: "/" | last}}</a> -->
 {%-endfor-%}
