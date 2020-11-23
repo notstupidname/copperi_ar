@@ -8,6 +8,7 @@
             e.preventDefault();
             e.stopPropagation();
             console.log("click");
+            
         }, false);
     }
 
