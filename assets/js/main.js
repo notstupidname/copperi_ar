@@ -9,7 +9,7 @@
             e.stopPropagation();
             const arsrc = this.getAttribute('data-arsrc');
             console.log(arsrc);
-            
+
             // check for AR support
             const a = document.createElement('a'),
                   supportsAR = a.relList.supports('ar') ? true : false;
