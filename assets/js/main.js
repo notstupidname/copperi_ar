@@ -18,7 +18,7 @@
                 const anchor = document.createElement('a');
                 anchor.setAttribute('rel', 'ar');
                 anchor.appendChild(document.createElement('img'));
-                const usdzSrc = '/assets/models/' + arsrc + '.usdz';
+                const usdzSrc = '/assets/models/' + arsrc + '.usdz#allowsContentScaling=0';
                 anchor.setAttribute('href', usdzSrc);
                 anchor.click();
             } else {
