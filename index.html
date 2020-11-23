@@ -11,5 +11,5 @@ permalink: /
     {%-endif-%}
 {%-endfor-%}
 {%-for model in models-%}
-<a class="button arbutton" data-arsrc="{{model | split: "/" | last}}" href=#>{{model | split: "/" | last}}</a>
+<a class="button arbutton" data-arsrc="{{model | split: "/" | last | split: "." | first}}" href=#>{{model | split: "/" | last}}</a>
 {%-endfor-%}
