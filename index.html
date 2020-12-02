@@ -7,7 +7,9 @@ permalink: /
 {%-assign models = "" | split:","-%}
 {%-for file in site.static_files-%}
     {%-if file.path contains "glb"-%}
-        {%-assign models = models | push: file.path-%}
+        {%-unless file.path contains "arglz"-%}
+            {%-assign models = models | push: file.path-%}
+        {%-endunless-%}
     {%-endif-%}
 {%-endfor-%}
 {%-for model in models-%}

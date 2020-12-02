@@ -1,0 +1,17 @@
+---
+title: notstupid AR Playground
+description: notstupid AR Playground
+layout: default
+permalink: /gg
+---
+{%-assign models = "" | split:","-%}
+{%-for file in site.static_files-%}
+    {%-if file.path contains "glb"-%}
+        {%-if file.path contains "arglz"-%}
+            {%-assign models = models | push: file.path-%}
+        {%-endif-%}
+    {%-endif-%}
+{%-endfor-%}
+{%-for model in models-%}
+<a class="button arbutton" data-arsrc="{{model | split: "/" | last | split: "." | first}}" href=#>{{model | split: "/" | last}}</a>
+{%-endfor-%}
