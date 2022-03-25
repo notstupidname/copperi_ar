@@ -15,7 +15,8 @@ permalink: /loc
     <a-scene
         vr-mode-ui="enabled: false"
         arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
-        renderer='antialias: true; alpha: true'>
+        renderer='antialias: true; alpha: true'
+        gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
             <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader></a-camera>
             <a-assets>
               <a-asset-item id="kirov" src="/assets/models/kirov.glb"></a-asset-item>
